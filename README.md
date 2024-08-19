@@ -153,7 +153,7 @@ Contains the IMDb rating and votes information for titles
 
 The IMDb data as provided is not normalised. We first design an entity-relationship diagram for our IMDb relational database. This is shown below.  
 
-![IMDb ER diagram.](images/imdb-er-diagram.png)
+![IMDb ER diagram.](Images/imdb-er-diagram.png)
 
 ## Logical schema
 
@@ -163,7 +163,7 @@ We then normalise our ER diagram and obtain the logical schema illustrated below
 
 - We pulled the rating information attributes from the Titles entity, because many titles didn't have a rating. If we were to store them in the Titles table, then we would have stored many NULL values. Instead we decided to separate this information, by putting it into the table Title_ratings.
 
-![IMDb logical schema diagram.](images/imdb-logical-schema.png)
+![IMDb logical schema diagram.](Images/imdb-logical-schema.png)
 
 ## Prepare the IMDb data and build the IMDb database
 
